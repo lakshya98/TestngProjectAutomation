@@ -1,0 +1,15 @@
+
+<suite name="Suite">
+ <listeners>
+	 <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+ </listeners>
+
+  <test  name="Test">
+  	<parameter name="username" value="Admin"/>	
+	<parameter name="password" value="admin123"/>
+    <classes>
+      <class name="testCase.test1"/>
+      <class name="testCase.adminModule"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
