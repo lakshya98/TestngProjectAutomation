@@ -11,11 +11,13 @@ import commonKeywords.keywords;
 
 public class adminModule {
 
-	keywords key = new keywords();
+	keywords key = new keywords(); 
+//	 conatain all the functions
 	
 	@Test
 	public void addAdmin() throws InterruptedException {
 
+		key.clickElement("//span[text()='Admin']");
 		key.clickElement("//span[text()='Admin']");
 		
 		key.waitUntilElementIsVisible("//button[text()=' Add ']");
